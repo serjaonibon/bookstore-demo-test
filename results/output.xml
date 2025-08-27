@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.2 on win32)" generated="2025-08-27T00:14:25.433333" rpa="false" schemaversion="5">
+<suite id="s1" name="Bookstore-Demo-Test" source="C:\bookstore-demo-test">
+<suite id="s1-s1" name="Register Test" source="C:\bookstore-demo-test\register_test.robot">
+<test id="s1-s1-t1" name="Scenario: Sucess sing in as Natural Person" line="9">
+<kw name="Given Open Browser" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:26.052794" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-08-27T00:14:26.048204" elapsed="2.553466"/>
+</kw>
+<kw name="And Go To" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:28.619551" level="INFO">Opening url 'http://localhost:5173/'</msg>
+<arg>http://localhost:5173/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-08-27T00:14:28.611901" elapsed="1.754549"/>
+</kw>
+<kw name="And Click Link" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:30.381862" level="INFO">Clicking link 'Minha conta'.</msg>
+<arg>Minha conta</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-27T00:14:30.373644" elapsed="0.122714"/>
+</kw>
+<kw name="When Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:30.507415" level="INFO">Typing text 'lorem ipsum' into text field 'id: register-name'.</msg>
+<arg>id: register-name</arg>
+<arg>lorem ipsum</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-27T00:14:30.502486" elapsed="0.163587"/>
+</kw>
+<kw name="And Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:30.680728" level="INFO">Typing text 'lorem@ipsum.com' into text field 'id: register-mail'.</msg>
+<arg>id: register-mail</arg>
+<arg>lorem@ipsum.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-27T00:14:30.671573" elapsed="0.144581"/>
+</kw>
+<kw name="And Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:30.831639" level="INFO">Typing password into text field 'id: register-pass'.</msg>
+<msg time="2025-08-27T00:14:30.882241" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id: register-pass</arg>
+<arg>foo123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-27T00:14:30.823383" elapsed="0.132827"/>
+</kw>
+<kw name="And Input Password" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:30.976752" level="INFO">Typing password into text field 'id: register-confirm-pass'.</msg>
+<msg time="2025-08-27T00:14:31.022812" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id: register-confirm-pass</arg>
+<arg>foo123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-27T00:14:30.966596" elapsed="0.108708"/>
+</kw>
+<kw name="And Select From List By Label" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:31.088227" level="INFO">Selecting options from selection list 'id: register-user-type' by label Pessoa Física.</msg>
+<arg>id: register-user-type</arg>
+<arg>Pessoa Física</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2025-08-27T00:14:31.081838" elapsed="0.069185"/>
+</kw>
+<kw name="And Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:31.161511" level="INFO">Selecting checkbox 'id: terms-of-use'.</msg>
+<arg>id: terms-of-use</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-27T00:14:31.155872" elapsed="0.109879"/>
+</kw>
+<kw name="And Submit Form" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:31.280173" level="INFO">Submitting form 'name: register'.</msg>
+<arg>name: register</arg>
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-27T00:14:31.274143" elapsed="0.031134"/>
+</kw>
+<kw name="Then Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Lorem ipsum, teu cadastro foi realizado com sucesso!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-08-27T00:14:31.311524" elapsed="0.094750"/>
+</kw>
+<kw name="And Page Should Contain Link" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:31.497509" level="INFO">Current page contains link '/my-orders'.</msg>
+<arg>/my-orders</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<status status="PASS" start="2025-08-27T00:14:31.432684" elapsed="0.099045"/>
+</kw>
+<kw name="And Page Should Contain Link" owner="SeleniumLibrary">
+<msg time="2025-08-27T00:14:31.610012" level="INFO">Current page contains link '/my-wish-list'.</msg>
+<arg>/my-wish-list</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<status status="PASS" start="2025-08-27T00:14:31.551443" elapsed="0.060159"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-08-27T00:14:31.629402" elapsed="6.439713"/>
+</kw>
+<status status="PASS" start="2025-08-27T00:14:26.041442" elapsed="12.028388"/>
+</test>
+<doc>Como cliente da loja virtual, desejo criar um cadastro
+no sistema para poder visualizar meus pedidos e listas de desejos.</doc>
+<status status="PASS" start="2025-08-27T00:14:25.569723" elapsed="12.507332"/>
+</suite>
+<status status="PASS" start="2025-08-27T00:14:25.443428" elapsed="12.640598"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Bookstore-Demo-Test" id="s1" pass="1" fail="0" skip="0">Bookstore-Demo-Test</stat>
+<stat name="Register Test" id="s1-s1" pass="1" fail="0" skip="0">Bookstore-Demo-Test.Register Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
