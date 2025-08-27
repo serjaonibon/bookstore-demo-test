@@ -4,9 +4,10 @@ Documentation    Como cliente da loja virtual, desejo criar um cadastro
 
 Library          SeleniumLibrary
 Resource         config.resource
+Resource         menu_page_object.resource
 Resource         account_page_object.resource
 Resource         register_page_object.resource
-Resource         menu_page_object.resource
+
 
 
 Test Setup       Open Browser            ${URL}    ${BROWSER}
