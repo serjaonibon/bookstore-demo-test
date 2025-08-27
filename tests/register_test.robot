@@ -3,10 +3,10 @@ Documentation    Como cliente da loja virtual, desejo criar um cadastro
 ...              no sistema para poder visualizar meus pedidos e listas de desejos.
 
 Library          SeleniumLibrary
-Resource         config.resource
-Resource         menu_page_object.resource
-Resource         account_page_object.resource
-Resource         register_page_object.resource
+Resource         ../resources/config.resource
+Resource         ../resources/page_objects/account_page_object.resource
+Resource         ../resources/page_objects/register_page_object.resource
+Resource         ../resources/page_objects/menu_page_object.resource
 
 
 
