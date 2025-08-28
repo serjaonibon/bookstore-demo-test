@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Project global definitions
+Documentation        Project global definition.
 
 *** Variables ***
 ${BROWSER}    chrome
