@@ -3,6 +3,8 @@ Documentation    Como cliente  da loja virtual, desejo criar um cadastro,
 ...              no sistema para poder visualizar meus
 ...              pedidos e listas de desejo.
 
+Library     FakerLibrary
+
 Library     SeleniumLibrary
 Resource    ../resource/config.resource
 Resource    ../resource/page_objects/account_page_object.resource

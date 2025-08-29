@@ -8,12 +8,13 @@ Resource   ../page_objects/account_page_object.resource
 
 I am on Bookstore Demo web site
     Title Should Be                        Bookstore Demo
+
 I go to log in or sing in page
     Click Link                             ${MY_ACCOUNT_BUTTON}
 
-
 I should see My Orders
-    Page Should Contain Link               ${MY_ORDERS_LINK}    
+    Page Should Contain Link               ${MY_ORDERS_LINK}  
+      
 I should see My Wish List
     Page Should Contain Link               ${MY_WISH_LIST_LINK}   
 
